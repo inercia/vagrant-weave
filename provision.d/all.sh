@@ -10,11 +10,6 @@ WEAVE_ORIGIN_URL=/weave/src/src/github.com/zettio/weave/weave
 DEBS_BASIC="apparmor \
 curl \
 bridge-utils \
-mininet \
-golang-go \
-golang-go.net-dev \
-golang-go.tools \
-golang-go.tools-dev \
 conntrack \
 ethtool"
 
@@ -32,7 +27,7 @@ MASK=255.255.255.0
 # the bridge device
 BRIDGE=bridge0
 
-# certificates (if using TLS)
+# certificates (if using TLS with docker)
 CA=/etc/docker/certs/ca.pem
 CERT=/etc/docker/certs/cert.pem
 KEY=/etc/docker/certs/key.pem
